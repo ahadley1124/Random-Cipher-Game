@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Random Cipher Generator</title>
+        <!-- Link the javascript -->
+        <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline';>
+    </head>
+    <body>
+        <h1>Random Cipher Generator</h1>
+        <!-- Create a div container that is editable by DOM to be used for the cipher returned from the server and create a box to the right of the div to show the result-->
+        <div id="cipherContainer">
+            <div id="cipher"></div>
+            <div id="result"></div>
+        </div>
+        <!-- Create a button that will call the function to generate a cipher -->
+        <button id="GenerateCipher">Generate Cipher</button>
+        <br>
+        <br>
+        <!-- Create a div with an input and a button to check the answer -->
+        <div>
+            <input id="answer" type="text" placeholder="Enter your answer here">
+            <button id="checkAnswer">Check Answer</button>
+        </div>
+    </body>
+    <!-- Link the main.js file in here -->
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
