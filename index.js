@@ -99,4 +99,6 @@ app.post('/api/decode', (req, res) => {
 });
 
 
-app.listen(9898);
+app.listen(9900, () => {
+    console.log('listening on port 9900');
+});
